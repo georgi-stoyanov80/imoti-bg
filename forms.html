@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>imoti</title>
+
+    <style>
+        .change-form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
+        <span class="navbar-brand text-light">Имоти</span>
+        <div class="collapse navbar-collapse justify-content-center" id="">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="./index.html">НАЧАЛО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./forms.html">Публикувай обява</a>
+                </li>   
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form id="form">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="title">Заглавие на обявата:</label>
+                    <input type="text" class="form-control" id="title" placeholder="Заглавие на обявата">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="img">Качи снимка:</label>
+                    <input type="text" class="form-control" id="img" placeholder="Качи URL на снимка">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="city">Населено място:</label>
+                    <input type="text" class="form-control" id="city" placeholder="Населено място">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="district">Квартал/Район:</label>
+                    <input type="text" class="form-control" id="district" placeholder="Квартал/Район">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="property">Имот:</label>
+                    <select class="form-control" id="property">
+                        <option value="Апартамент">Апартамент</option>
+                        <option value="Къща">Къща</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="typeOfProperty">Вид на имота:</label>
+                    <select class="form-control" id="typeOfProperty">
+                        <option value="Едностаен">Едностаен</option>
+                        <option value="Двустаен">Двустаен</option>
+                        <option value="Тристаен">Тристаен</option>
+                        <option value="Многостаен">Многостаен</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="quadrature">Квадратура:</label>
+                    <input type="number" class="form-control" id="quadrature" placeholder="Квадратура">
+                </div>
+                <div class="form-group col-md-1">
+                    <label>&nbsp;</label>
+                    <input class="form-control" placeholder="кв.м">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="price">Цена:</label>
+                    <input type="number" class="form-control" id="price" placeholder="Цена">
+                </div>
+                <div class="form-group col-md-1">
+                    <label>&nbsp;</label>
+                    <input class="form-control" placeholder="лева">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="information">Допълнителна информация:</label>
+                    <textarea class="form-control" id="information" rows="4"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-form">Качи обявата</button>
+            <button type="submit" class="btn btn-primary change-form">Запази промените</button>
+        </form>
+    </div>
+    
+    <div style="height: 100px"></div>
+
+    <script src="js/base.js"></script>
+    <script src="js/Data.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/put.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

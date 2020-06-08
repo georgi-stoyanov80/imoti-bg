@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Imoti</title>
+    <style>
+        .badge {
+            width: 110px;
+        }
+        .card-img {
+            height: 170px;
+        }
+        .spinner-border {
+            width: 20px;
+            height: 20px;
+        }
+        .pagination {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
+        <span class="navbar-brand text-light">Имоти</span>
+        <div class="collapse navbar-collapse justify-content-center" id="">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./forms.html">Публикувай обява</a>
+                </li>   
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row d-flex flex-row-reverse mb-3 sort">
+            <div class="col-md-2">
+                <label for="sortBy">сортирай по:</label>
+                <select class="custom-select custom-select-sm" id="sortBy">
+                    <option value="default">По подразбиране</option>
+                    <option value="lowPrice">Цена най-ниска</option>
+                    <option value="highPrice">Цена най-висока</option>
+                    <option value="apartments">Само апартаменти</option>
+                    <option value="houses">Само къщи</option>
+                </select>
+            </div> 
+        </div>
+        <div class="row" id="propertysList"></div>
+        <nav class="pagination-nav">
+            <ul class="pagination"></ul>
+        </nav>
+    </div>
+
+    <div style="height: 200px"></div>
+
+    <script src="js/base.js"></script>
+    <script src="js/Data.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
